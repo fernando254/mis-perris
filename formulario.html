@@ -8,7 +8,7 @@
     <title>Mis Perris</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="dist/css/lightbox.css">
+    <link rel="stylesheet" href="css/formulario.css">
 
 </head>
 
@@ -43,85 +43,40 @@
         </section>
 
         <section id="Bienvenida">
-            <h2> Bienvenidos a nuestro club</h2>
+            <h2> Formulario de adopcion de mascotas</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias unde aperiam dolorum, nisi tenetur
                 necessitatibus aspernatur inventore accusamus porro dolor eveniet omnis, repudiandae vero voluptatem
                 pariatur odit alias, modi reprehenderit!</p>
         </section>
 
-        <section id="blog"> 
+        <section id="formulario">
 
-                <h3>Lo ultimo de nuestra mascotas</h3>
+            <form class="form-registro" action="" method="post">
 
-                <div class="contenedor">
+                <h2 class="form-titulo">Creacion de cuenta de usuario</h2>
 
-                    <article>
+                <div class="contedor-input">
 
-                        <img src="img/perro 2.png" alt="">
-                        <h4>Perrunos son amigos</h4>
+                    <input class="col-sm" type="text" name="txtNombre" id="txtNombre" placeholder="ingrese nombre" required minlength="3">
+                    <input class="col-sm" type="text" name="txtApellido" id="txtApellido" placeholder="ingrese apellido" requiredminlength="3">
+                    <input class="col-xl" type="email" name="txtEmail" id="txtEmail" placeholder="ingrese email" required>
+                    <input class="col-sm" type="text" name="txtUsuario" id="txtUsuario" placeholder="ingrese usuario" requiredminlength="3" maxlength="10">
+                    <input class="col-sm" type="password" name="txtPass" id="txtPass" placeholder="ingrese password" requiredminlength="8" maxlength="12">
+                    <input class="col-xl" type="text" name="txtFono" id="txtFono" placeholder="ingrese fono" requiredminlength="8">
 
-                    </article>
-
-                    <article>
-
-                        <img src="img/perro 3.jpg" alt="">
-                        <h4> Simpatia perruna</h4>
-                    
-                    </article>
-                    
-
-                    <article>
-                        <img src="img/perro 4.jpg" alt="">
-                        <h4>Linda mascota</h4>
-
-                    </article>
-                    
-                    
+                    <input class="btn-registrar" type="submit" value="Registrar">
+                    <input class="btn-registrar" type="button" value="Validar" onclick="validarNombre()">
 
                 </div>
 
+            </form>
+
         </section>
 
-        <section id="info"> 
+        <script src="js/scripts.js"></script>
 
-            <h3>Para muchos de nosotros las mascotas son mienbros de nuestra familia</h3>
-
-            <div class="contenedor">
-
-                <article>
-
-                    <img src="img/perro 2.png" alt="">
-                    <h4>El pulgoso</h4>
-
-                </article>
-
-                <article>
-
-                    <img src="img/perro 7.jpg" alt="">
-                    <h4>Farkas</h4>
-                
-                </article>
-                
-
-                <article>
-                    <img src="img/perro 4.jpg" alt="">
-                    <h4>El peluca</h4>
-                    
-                </article>
-
-                <article>
-                    <img src="img/perro 5.jpg" alt="">
-                    <h4>Chico pumpi</h4>
-
-                </article>
-                
-
-            </div>
-
-    </section>
     </main>
 
-    <script src="dist/js/lightbox-plus-jquery.js"> </script>
 </body>
 
 </html>
